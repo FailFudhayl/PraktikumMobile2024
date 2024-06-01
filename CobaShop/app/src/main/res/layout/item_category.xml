@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="180dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:background="@drawable/card_category_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/card_category_border">
+
+        <ImageView
+            android:id="@+id/IV_CategoryImage"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/ic_launcher_background"
+            android:contentDescription="djj"/>
+
+        <TextView
+            android:id="@+id/TV_CategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Category Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:text="Nama Kategori"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
